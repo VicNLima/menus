@@ -1,56 +1,83 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
-body{
+body {
     width: 100%;
     height: 100vh;
     position: relative;
     background: #DE522F;
 }
 
-.container{
+.top-menu {
+    background: #fff;
+    padding: 10px 0;
+}
+
+.top-menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.top-menu li {
+    margin: 0 15px;
+}
+
+.top-menu a {
+    text-decoration: none;
+    color: #DE522F;
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+.top-menu a:hover {
+    color: #B41D26;
+}
+
+.container {
     width: 350px;
     height: 400px;
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
 
-.container .product{
+.container .product {
     background: #fafafa;
     padding: 20px;
     text-align: center;
     border-radius: 15px;
 }
 
-.container .product .image{
+.container .product .image {
     width: 300px;
     height: 150px;
     margin: auto;
 }
 
-.container .product .image .product-image{
+.container .product .image .product-image {
     width: 100%;
     height: 100%;
     object-fit: contain;
     transition: 0.8s linear;
 }
 
-.container .product .color{
+.container .product .color {
     display: flex;
-    align-items:center ;
+    align-items: center;
     justify-content: center;
     margin: 15px;
 }
 
-.container .product .color span{
+.container .product .color span {
     width: 15px;
     height: 15px;
     margin: 0 15px;
@@ -60,23 +87,23 @@ body{
     position: relative;
 }
 
-.container .product .color .green{
+.container .product .color .green {
     background: #9ABE62;
 }
 
-.container .product .color .black{
+.container .product .color .black {
     background: #222627;
 }
 
-.container .product .color .red{
+.container .product .color .red {
     background: #B41D26;
 }
 
-.container .product .color .orange{
+.container .product .color .orange {
     background: #DE522F;
 }
 
-.container .product .color .active::after{
+.container .product .color .active::after {
     content: "";
     width: 17px;
     height: 17px;
@@ -87,25 +114,25 @@ body{
     top: -3px;
 }
 
-.container .product .title{
+.container .product .title {
     font-size: 22px;
     text-align: center;
 }
 
-.container .product .detail{
+.container .product .detail {
     text-align: center;
 }
 
-.container .product .detail p{
+.container .product .detail p {
     margin: 15px;
     font-size: 25px;
 }
 
-.container .product .detail p span{
+.container .product .detail p span {
     color: #DE522F;
 }
 
-.container .product .detail a{
+.container .product .detail a {
     text-decoration: none;
     background: #DE522F;
     padding: 8px 45px;
